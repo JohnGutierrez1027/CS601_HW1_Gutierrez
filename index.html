@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription Form</title>
+    <link rel="stylesheet" href="css/main.css"> <!-- Link to the external CSS stylesheet -->
+</head>
+
+<body>
+    <div class="form-container">
+        <h2>MEMBERSHIP SUBSCRIPTION</h2> <!-- Web From title -->
+        <form id="subscriptionForm"> <!-- Web Form starts here -->
+            <div class="input-control">
+                <label for="firstName">First Name:</label>
+                <input id="firstName" name="firstName" type="text">
+                <div class="error"></div>
+            </div> <!-- Error display for first name wrong format-->
+            <div class="input-control">
+                <label for="lastName">Last Name:</label>
+                <input id="lastName" name="lastName" type="text">
+                <div class="error"></div>
+            </div> <!-- Error display for last name wrong format -->
+            <div class="input-control">
+                <label for="email">Email:</label>
+                <input id="email" name="email" type="text">
+                <div class="error"></div>
+            </div> <!-- Error display for wrong email format -->
+            <div class="input-control">
+                <label for="package">Package:</label>
+                <select id="package" name="package">
+                    <option value="" disabled selected>Select a package</option> <!-- Assign font color to the drop down menu options -->
+                    <option value="bronze" style="color:#5aaf0f">Bronze</option>
+                    <option value="silver" style="color:#dc1877">Silver</option>
+                    <option value="gold" style="color:#FFC300">Gold</option>
+                    <option value="platinum" style="color:#0000FF">Platinum</option>
+                </select>
+                <div class="error"></div>
+            </div> <!-- Error display for select package -->
+            <div class="input-control">
+                <input type="checkbox" id="subscribe"><label for="subscribe">Subscribe</label>
+                <div class="error">
+                </div> <!-- Error display for checkbox -->
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <!-- Summary Display Section -->
+        <div id="summary" style="display: none; padding-top: 20px; color: #bf00ff; text-align: center;"></div>
+    </div>
+
+    <script src="scripts/main.js"></script> <!-- Link to the external JavaScript file for form functionality -->
+</body>
+
+</html>
